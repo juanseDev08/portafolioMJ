@@ -1,1 +1,1216 @@
 /* You can add global styles to this file, and also import other style files */
+//@import "../node_modules/primeng/resources/themes/vela-green/theme.css"
+
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+:root {
+  --verde-institucional: #26670f;
+  --verde-insti-oscuro: #1e520c;
+  --verde-insti-claro: #308113;
+  --rojo: #d12727;
+  --fondo-tabla: #ededed;
+  --tam-input-form: 2.8125rem;
+  --1-px: 0.0625rem;
+  --2-px: 0.125rem;
+  --3-px: 0.1875rem;
+  --4-px: 0.25rem;
+  --5-px: 0.3125rem;
+  --8-px: 0.5rem;
+  --10-px: 0.625rem;
+  --14-px: 0.875rem;
+  --16-px: 1rem;
+  --18-px: 1.125rem;
+  --20-px: 1.25rem;
+  --22-px: 1.375rem;
+  --25-px: 1.5625rem;
+  --30-px: 1.875rem;
+  --35-px: 2.1875rem;
+  --40-px: 2.5rem;
+  --45-px: 2.8125rem;
+  --80-px: 5rem;
+  --max-ancho-dropdown: 800px;
+  --max-ancho-dropdown-movil: 300px;
+
+  /***Variables para cambiar el color****/
+  --color-gpe: #1e520c;
+  --color-aux: #276412;
+}
+
+/* Aplica justificación al texto en todos los elementos <li> */
+li {
+  text-align: justify;
+}
+
+.centered-title {
+  /*position: absolute;
+   Agrega posicionamiento absoluto al contenido centrado
+  top: 85%;
+  /* Utiliza viewport height (vh) en lugar de porcentaje para la posición vertical
+  left: 50%;
+  /* Posición horizontalmente en el centro
+  transform: translateX(-50%);
+  /* Centra horizontalmente sin afectar la posición vertical */
+  text-align: center;
+  /* Alinea el texto en el centro */
+  padding: var(--10-px);
+  /* Utiliza rem en lugar de píxeles para el relleno */
+  color: var(--verde-institucional);
+  /* Cambia el color del texto */
+  width: 100%;
+  /* Asegúrate de que ocupe el ancho completo */
+}
+
+.centered-title h1 {
+  margin: 0;
+  /* Elimina los márgenes predeterminados del h1 */
+}
+
+.centered-footer {
+  position: absolute;
+  /* Agrega posicionamiento absoluto al contenido centrado */
+  left: 50%;
+  /* Posición horizontalmente en el centro */
+  transform: translateX(-50%);
+  /* Centra horizontalmente sin afectar la posición vertical */
+  width: 100%;
+  /* Asegúrate de que ocupe el ancho completo */
+  margin: 0;
+  /* Elimina los márgenes predeterminados */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.centered-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: var(--16-px);
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-custom {
+  width: var(--20-px);
+  /* Ajusta el ancho utilizando em o porcentajes */
+  height: var(--20-px);
+  /* Ajusta la altura utilizando em o porcentajes */
+  margin-right: var(--10-px);
+  /* Ajusta el margen utilizando em o porcentajes */
+  position: relative;
+}
+
+.checkbox-custom i {
+  font-size: var(--25-px);
+  color: #333;
+}
+
+.checkbox-input:checked+.checkbox-custom i {
+  color: var(--rojo);
+  font-size: var(--30-px);
+  /* Cambia el color cuando el checkbox está seleccionado */
+}
+
+.input-readonly {
+  background-color: #f0f0f0 !important;
+  /* Cambia el color de fondo cuando esté en modo de solo lectura */
+}
+
+.label-title {
+  color: var(--verde-institucional);
+  font-size: var(--20-px);
+  font-weight: bold;
+}
+
+.label-subline {
+  border-bottom: var(--2-px) solid #e0e0e0;
+  /* Establece el subrayado y su color */
+  color: var(--verde-institucional);
+  font-size: var(--20-px);
+  font-weight: bold;
+}
+
+.focus\:border-primary:focus {
+  border-color: var(--verde-insti-oscuro) !important;
+}
+
+.p-dropdown-panel {
+  background: #ffffff;
+  color: #495057;
+  border: 0 none;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.p-dropdown:not(.p-disabled).p-focus {
+  border-color: var(--color-gpe);
+  box-shadow: inset 0 0 0 var(--3-px) var(---color-gpe);
+}
+
+.p-dropdown:not(.p-disabled):hover {
+  border-color: var(--color-gpe);
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  color: var(--color-gpe) !important;
+  background: var(--fondo-tabla) !important;
+
+}
+
+/* Estilos para el p-dropdown cuando está deshabilitado */
+.p-dropdown-disabled .p-dropdown-trigger,
+.p-dropdown-disabled .p-dropdown-label,
+.p-dropdown-disabled .p-dropdown-panel {
+  background-color: #f0f0f0 !important;
+}
+
+.font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* ---------- Header ---------- */
+.header {
+  /* Agrega posicionamiento relativo al contenedor .header */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+/* Estilo para los elementos <label> que estarán en la parte superior */
+.label-top {
+  align-self: flex-start;
+  /* Alinea los elementos en la parte superior verticalmente */
+}
+
+/* Establece el tamaño del h1 para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+  .centered-title h1 {
+    font-size: var(--25-px);
+    /* Cambia el tamaño del texto */
+  }
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  /* Alinea el contenido en el centro horizontalmente */
+  display: flex;
+  /* Usa flexbox para alinear elementos verticalmente */
+  flex-direction: column;
+  /* Alinea los elementos verticalmente en una columna */
+  align-items: flex-start;
+  /* Alinea los elementos en la parte superior verticalmente */
+  position: relative;
+  /* Agrega posicionamiento relativo al contenedor .header */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Estilo para los elementos que estarán en la parte superior */
+.img-inside-footer {
+  height: auto;
+  width: 40%;
+}
+
+.label-inside-footer {
+  text-align: justify;
+  color: black;
+  font-size: var(--18-px);
+}
+
+.social-buttons {
+  display: flex;
+  /* Utiliza flexbox para alinear elementos horizontalmente */
+  align-items: center;
+  /* Alinea los elementos verticalmente en el centro */
+  justify-content: center;
+  /* Alinea los elementos horizontalmente en el centro */
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  width: var(--40-px);
+  height: var(--40-px);
+  border-radius: 50%;
+  background-color: var(--verde-institucional);
+  /* Color de fondo normal */
+  color: #fff;
+  /* Color del ícono */
+  text-decoration: none;
+  transition: background-color 0.3s;
+  /* Efecto de transición al hacer hover */
+  margin: var(--5-px);
+  /* Añade margen entre los botones */
+}
+
+.social-button i {
+  font-size: var(--20-px);
+  /* Ajusta el tamaño del icono según tus preferencias */
+}
+
+.social-button:hover {
+  color: var(--verde-institucional);
+  /* Color del ícono */
+  background-color: #fff;
+  /* Color de fondo normal */
+}
+
+.mi-enlace {
+  color: var(--verde-institucional);
+  /* Cambia el color del texto */
+  text-decoration: none;
+  /* Elimina la subraya predeterminada */
+  font-weight: bold;
+  /* Aplica negrita al texto */
+}
+
+.mi-enlace:hover {
+  color: var(--verde-insti-oscuro);
+  /* Cambia el color del texto al hacer hover */
+}
+
+/* Carrito Compras */
+/* Estilo para el botón sin borde y fondo */
+.custom-button {
+  position: relative;
+  /* Añade posicionamiento relativo al contenedor */
+  background: none;
+  /* Elimina el fondo del botón */
+  border: none;
+  /* Elimina el borde del botón */
+  padding: 0;
+  /* Elimina el espaciado interno del botón */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo para el icono dentro del botón */
+.custom-button i {
+  margin-right: var(--5-px);
+  /* Espaciado a la derecha del icono */
+  font-size: var(--45-px);
+  /* Tamaño de fuente del icono (ajusta según sea necesario) */
+  color: var(--verde-institucional);
+  /* Cambia el color del icono*/
+  position: relative;
+  /* Añade posicionamiento relativo al icono */
+}
+
+.custom-button .counter {
+  background-color: red;
+  /* Color de fondo del contador */
+  color: var(--fondo-tabla);
+  /* Color del texto del contador */
+  border-radius: 50%;
+  /* Hace que el contador sea circular */
+  padding: var(--3-px) var(--8-px);
+  /* Espaciado interno del contador utilizando unidades relativas */
+  font-size: var(--14-px);
+  /* Tamaño de fuente del contador utilizando rem */
+  position: absolute;
+  /* Añade posicionamiento absoluto al contador */
+  top: 0;
+  /* Posición en la parte superior utilizando unidades relativas */
+  right: 0;
+  /* Posición en la parte derecha utilizando unidades relativas */
+  border: var(--2-px) solid var(--fondo-tabla);
+  /* Añade un borde con unidades relativas */
+}
+
+.custom-button-menu i {
+  color: var(--fondo-tabla);
+  /* Cambia el color del icono*/
+  font-size: var(--35-px);
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* ---------- Menu Bar ---------- */
+/* Define una clase para el tamaño de fuente personalizado */
+.custom-menu-item {
+  font-size: var(--20-px);
+  /* Ajusta el tamaño de fuente según tu preferencia */
+}
+
+.p-menubar {
+  padding: var(--8-px);
+  background: var(--verde-institucional);
+  color: #ffffff;
+  border: var(--1-px) solid var(--fondo-tabla);
+  border-radius: 0px;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link,
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover {
+  color: var(--verde-institucional);
+  background: var(--fondo-tabla);
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover {
+  background: var(--fondo-tabla);
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-submenu-icon,
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-submenu-icon {
+  color: var(--verde-institucional);
+}
+
+.p-menubar .p-menuitem.p-menuitem-active>.p-menuitem-link {
+  background: var(--fondo-tabla);
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-menuitem-text,
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {
+  color: var(--verde-institucional);
+
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-submenu-icon,
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-submenu-icon {
+  color: var(--verde-institucional);
+}
+
+.p-menubar .p-menuitem.p-menuitem-active>.p-menuitem-link .p-menuitem-text {
+  color: var(--verde-institucional);
+}
+
+.p-menubar .p-menuitem-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 var(--3-px) var(--verde-insti-oscuro);
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 var(--3-px) var(--verde-insti-oscuro);
+}
+
+/* ---------- Item Menu Bar ---------- */
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-submenu-icon {
+  color: var(--fondo-tabla);
+  margin-left: var(--8-px);
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  color: var(--fondo-tabla);
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-text {
+  color: #4b5563;
+}
+
+
+/* ---------- Tabla ---------- */
+
+.p-datatable .p-datatable-header {
+  border-width: var(--1-px) 0 var(--2-px) 0;
+  /* 1px arriba, 0 a la derecha, 2px abajo, 0 a la izquierda */
+  background: var(--fondo-tabla);
+}
+
+.p-datatable .p-datatable-tbody>tr {
+  background: var(--fondo-tabla);
+  color: #000000;
+  transition: box-shadow 0.2s;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+  border-width: 0 0 0 0;
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+  font-size: var(--18-px);
+  background: var(--color-gpe);
+  color: #ffffff;
+  margin-bottom: var(--5-px);
+  /* Agrega margen en la parte inferior */
+  border-width: 0 0 0 0;
+}
+
+.p-datatable .p-sortable-column:not(.p-highlight):hover {
+  background: var(--color-gpe);
+  margin-bottom: var(--5-px);
+  /* Agrega margen en la parte inferior */
+  color: #FFFFFF;
+  border-width: 0 0 0 0;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+  background: var(--color-gpe);
+  margin-bottom: var(--5-px);
+  /* Agrega margen en la parte inferior */
+  color: #ffffff;
+  border-width: 0 0 0 0;
+  font-size: var(--25-px);
+}
+
+.header-gasto-operacional{
+  width: 100%;
+  height: 2rem !important;
+  background: var(--color-aux) !important;
+ // margin-bottom: var(--5-px) !important;
+  /* Agrega margen en la parte inferior */
+  color: #ffffff;
+  border-width: 0 0 0 0;
+}
+
+
+.p-datatable .p-sortable-column:not(.p-highlight):hover .p-sortable-column-icon {
+  background: var(--color-gpe);
+  margin-bottom: var(--5-px);
+  /* Agrega margen en la parte inferior */
+  color: #ffffff;
+  border-width: 0 0 0 0;
+}
+
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+  color: #ffffff;
+}
+
+.p-datatable .p-sortable-column.p-highlight:hover .p-sortable-column-icon {
+  color: #ffffff;
+}
+
+.p-datatable .p-sortable-column.p-highlight {
+  background: var(--color-gpe);
+  color: #ffffff;
+}
+
+.p-datatable .p-sortable-column.p-highlight:hover {
+  background: var(--color-gpe);
+  color: #ffffff;
+}
+
+.p-datatable .p-sortable-column:focus {
+  box-shadow: inset 0 0 0 0;
+  outline: 0 none;
+}
+
+th.con-subrayado::after {
+  content: "";
+  display: block;
+  border-bottom: var(--2-px) solid #e0e0e0;
+  /* Establece el subrayado y su color */
+}
+
+/* Modificar los estilos del placeholder para todos los input de texto */
+input::placeholder {
+  color: #c2c2c2;
+  /* Cambiar el color del texto del placeholder */
+}
+
+/* Cambiar el color de fondo del input */
+.input-cantidad .p-inputtext {
+  background-color: var(--fondo-tabla);
+  /* Cambia el color de fondo*/
+  border-color: var(--fondo-tabla);
+}
+
+.p-inputtext:enabled {
+  border-color: var(--fondo-tabla);
+}
+
+.p-inputtext:enabled:hover {
+  border-color: var(--fondo-tabla);
+}
+
+.p-inputtext:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0;
+  border-color: var(--fondo-tabla);
+}
+
+/* Cambiar los estilos de los botones de incremento y decremento */
+.input-cantidad .p-inputnumber .p-button {
+  background-color: var(--fondo-tabla);
+  /* Cambia el color de fondo de los botones*/
+  color: #000000;
+  /* Cambia el color del texto de los botones*/
+  border: none;
+  /* Elimina el borde de los botones */
+  margin: 0;
+  /* Ajusta el margen de los botones según sea necesario */
+}
+
+/* Aumentar el tamaño de la fuente de los botones de incremento y decremento */
+.input-cantidad .p-inputnumber .p-button .pi {
+  font-size: var(--20-px);
+  /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.input-cantidad .p-inputnumber .p-button .pi:hover {
+  font-size: var(--22-px);
+  color: var(--verde-institucional);
+  /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-up:hover {
+  background-color: var(--fondo-tabla);
+}
+
+.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-down:hover {
+  background-color: var(--fondo-tabla);
+}
+
+/* Reducir el ancho del campo del input */
+.input-cantidad .p-inputnumber .p-inputtext {
+  width: var(--80-px);
+  /* Ajusta el ancho según sea necesario */
+}
+
+/* Cambiar el color de fondo de los botones cuando están activos (haciendo clic) */
+.input-cantidad .p-inputnumber .p-button.p-button-success:active,
+.input-cantidad .p-inputnumber .p-button.p-button-danger:active {
+  background-color: #dfdfdf;
+  /* Cambia el color de fondo cuando se hacen clic en los botones */
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: var(--fondo-tabla);
+  border-color: var(--fondo-tabla);
+  color: var(--verde-institucional);
+}
+
+.p-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 var(--3-px) var(--verde-insti-oscuro);
+}
+
+/* ---------- POP UP ---------- */
+.p-dialog .p-dialog-header {
+  color: var(--color-gpe);
+  /* Color del texto del encabezado */
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  width: 2rem;
+  height: 2rem;
+  background: transparent !important;
+  color: #000000;
+  border: 0 none;
+  background: var(--color-gpe);
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-right: 0.5rem;
+}
+
+h3 {
+  color: var(--color-gpe);
+}
+
+/* Aplicar la misma altura a todos los input y select */
+input {
+  height: var(--tam-input-form);
+}
+
+
+
+.fondo-formulario {
+  background-color: var(--fondo-tabla);
+}
+
+.tam-select-lst {
+  width: 100%;
+}
+
+/* ---------- BUTTON ---------- */
+.p-button {
+  background: var(--color-gpe);
+  border: var(--1-px) solid #ffffff;
+}
+
+.p-button:enabled:hover {
+  background: var(--color-gpe);
+  border-color: var(--color-gpe);
+}
+
+.p-button:enabled:active {
+  background: var(--color-gpe);
+  border-color: var(--color-gpe);
+  color: #ffffff;
+}
+
+.p-button:focus {
+  box-shadow: 0 0 0 var(--2-px) #ffffff, 0 0 0 var(--4-px) var(--color-gpe), 0 var(--1-px) var(--2-px) 0 black;
+}
+
+.button-form-tabla {
+  background: transparent !important;
+}
+.disabled {
+  color: grey;
+}
+
+.button-form-tabla:disabled {
+  background-color: grey;
+}
+.no-pointer {
+  cursor: default !important;
+}
+.p-dropdown-item.disabled {
+  cursor: default;
+}
+.button-form {
+  background: var(--color-gpe);
+  color: #ffffff;
+  border-color: var(--color-gpe);
+}
+
+.button-form:focus {
+  box-shadow: 0 0 0 var(--2-px) #ffffff, 0 0 0 var(--4-px) var(--color-gpe), 0 var(--1-px) var(--2-px) 0 black;
+}
+
+.button-form:enabled:active {
+  background: var(--color-gpe);
+  color: #ffffff;
+  border-color: var(--color-gpe);
+}
+
+.button-form:enabled:hover {
+  background: var(--color-gpe);
+  color: #ffffff;
+  border-color: var(--color-gpe);
+}
+
+/* ---------- LOG IN ---------- */
+.lg\:w-5 {
+  width: 20% !important;
+}
+
+
+/*------------- PANTALLA ----------------*/
+.header img {
+  width: 75%;
+  height: auto;
+}
+.custom-dialog {
+  width: 70%;
+}
+
+.responsive-container {
+  max-width: 100%;
+  padding: 0 var(--20-px);
+  margin: 0 auto;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .responsive-container {
+    padding: 0 var(--10-px);
+  }
+
+  /* Adjust p-dialog dimensions and layout for small screens */
+  .p-dialog {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .p-dialog .field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .p-dialog .field label {
+    margin-bottom: 5px;
+  }
+
+  .p-dialog .field input, .p-dialog .field dropdown {
+    width: 100%;
+  }
+
+  .p-dialog .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p-dialog .grid .col-6 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+
+
+  .p-dropdown-panel {
+    max-width: var(--max-ancho-dropdown-movil);
+  }
+}
+
+
+/*------------- TABLE ----------------*/
+/* Estilos generales para el contenedor */
+.table-container {
+  overflow-x: auto;
+  padding-bottom: 10%;
+}
+
+/*------------- BLOQUEAR UI ----------------*/
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Un color de fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Z-index alto para asegurar que esté encima de otros elementos */
+}
+
+circle.p-progress-spinner-circle{
+  stroke: var(--verde-institucional);
+  animation: p-progress-spinner-dash 1.5s ease-in-out infinite;
+}
+
+.container-header-table{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Ubicación del icono de buscar
+.p-icon-field-left .p-input-icon:first-of-type {
+  left: 9.75rem !important; 
+  color: #6b7280;
+}
+
+.usuario{
+width: 83% !important;
+}
+
+.p-tag{
+  width: 30%;
+}
+
+.text-danger {
+  color: red;
+}
+
+.label-required::after {
+  content: ' *';
+  color: red;
+}
+
+//--- PROPIEDADES DEL MENSAJE DE ALERTA ---//
+.swal-container-custom {
+  z-index: 2105 !important; 
+}
+.swal-confirm-botton-custom{
+  background-color: #26670f;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ajusta este valor según sea necesario */
+}
+/* Sobrescribir los estilos de las pestañas */
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+
+.usuarioDisable{
+  background-color: lightgray !important;
+  color: rgb(53, 52, 52) !important;
+  cursor: not-allowed;
+}
+
+.flex-container label {
+  flex: 0 0 auto; /* El label mantiene su tamaño natural */
+}
+
+.flex-container p-dropdown {
+  flex: 1 1 auto; /* El dropdown toma el espacio restante */
+}
+
+.custom-select-button .p-button.p-highlight {
+  background: #007ad9 !important; 
+  color: white !important; 
+  border-color: #007ad9 !important; 
+}
+
+.custom-select-button .p-button:not(.p-highlight) {
+  background: #ffffff; 
+  color: #acacac; 
+}
+
+.p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background-color: var(--color-gpe) !important;
+  color: white !important;
+}
+
+.p-tabview .p-tabview-nav-content {
+  scroll-padding-inline: 3rem;
+}
+.p-tabview .p-tabview-nav {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-width: 0 0 0 0;
+}
+.p-tabview .p-tabview-nav li {
+  margin-right: 4px;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  border: solid #e5e7eb;
+  border-width: 0 0 2px 0;
+  border-color: transparent transparent #9ca3af transparent;
+  background: #9ca3af;
+  color: #ffffff;
+  padding: 1.25rem;
+  font-weight: 700;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  transition: box-shadow 0.2s;
+  margin: 0 0 0  0;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus-visible {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 0.2rem #9ca3af;
+}
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+  background: #9ca3af;
+  border-color: #9ca3af;
+  color: #ffffff;
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background: var(--color-gpe);
+  border-color: var(--color-gpe);
+  color: #ffffff;
+}
+.p-tabview .p-tabview-left-icon {
+  margin-right: 0.5rem;
+}
+.p-tabview .p-tabview-right-icon {
+  margin-left: 0.5rem;
+}
+.p-tabview .p-tabview-close {
+  margin-left: 0.5rem;
+}
+.p-tabview .p-tabview-nav-btn.p-link {
+  background: #ffffff;
+  color: var(--color-gpe);
+  width: 3rem;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+}
+.p-tabview .p-tabview-nav-btn.p-link:focus-visible {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 0.2rem #DDD6FE;
+}
+
+.p-tabview .p-tabview-nav::after {
+  content: '';
+  display: block;
+  width: 99%;
+  height: 1px; /* Grosor de la línea */
+  background-color:#9ca3af;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+
+.botonEliminarArchivo{
+  border: transparent !important;
+  background: transparent !important;
+}
+.sidebar-container {
+  transition: margin-left 0.3s;
+}
+
+
+.content-container {
+  transition: margin-left 0.3s;
+  background-color: transparent;
+}
+
+.content-container.shifted {
+  margin-left: 250px; 
+}
+
+.p-sidebar .p-component-overlay {
+  position: inherit;
+}
+
+.no-justify {
+  text-align: left !important;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container small.p-error {
+  margin-top: 0.5rem; /* Puedes ajustar este margen según sea necesario */
+}
+
+/********ESTILOS PARA CAMBIAR P-INPUTSWITCH*****************************/
+
+.p-inputswitch {
+  width: 3rem;
+  height: 1.75rem;
+}
+.p-inputswitch .p-inputswitch-slider {
+  background: #d1d5db;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 30px;
+}
+.p-inputswitch .p-inputswitch-slider:before {
+  background: #ffffff;
+  width: 1.25rem;
+  height: 1.25rem;
+  left: 0.25rem;
+  margin-top: -0.625rem;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+  transform: translateX(1.25rem);
+}
+.p-inputswitch.p-focus .p-inputswitch-slider {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem transparent;
+}
+.p-inputswitch:not(.p-disabled):hover .p-inputswitch-slider {
+  background: #b7bcc5;
+}
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+  background:var(--color-gpe);
+}
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+  background: #ffffff;
+}
+.p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+  background: var(--color-gpe);
+}
+
+p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch > .p-inputswitch-slider {
+  border-color: #e24c4c;
+}
+
+
+/* ---------- BUTTON PARA TABLA ---------- */
+
+
+.button-form-tabla {
+  background: transparent;
+  color: var(---color-gpe);
+  border-color: transparent;
+}
+
+.button-form-tabla:focus {
+  box-shadow: 0 0 0 var(--2-px) #ffffff, 0 0 0 var(--4-px) var(--color-gpe), 0 var(--1-px) var(--2-px) 0 black;
+}
+
+.button-form-tabla:enabled:active {
+  background: transparent;
+  color:var(---color-gpe);
+  border-color: transparent;
+}
+
+.button-form-tabla:enabled:hover {
+  background: transparent;
+  color: var(--color-gpe);
+  border-color: transparent;
+}
+
+/***********ESTILOS PARA EDITOR NUEVO *******************************************/
+
+/* Cambiar el fondo y el color del texto del editor */
+.ql-editor {
+  background-color: #ffffff;
+  color: #333;
+  width: 1450px;
+}
+
+/* Cambiar el estilo del texto seleccionado */
+.ql-editor .ql-picker.ql-expanded .ql-picker-options {
+  background-color: #f1f1f1;
+  border-color: #ccc;
+}
+
+/* Cambiar el estilo del cursor */
+.ql-editor.ql-blank::before {
+  font-style: italic;
+  color: #999;
+}
+
+/* Cambiar el estilo de la barra de herramientas */
+.ql-toolbar {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+
+/* Cambiar el estilo de los botones de la barra de herramientas */
+.ql-toolbar .ql-formats button {
+  border: none;
+  background-color: #ececec;
+}
+
+.ql-toolbar .ql-formats button:hover {
+  background-color: #ddd;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  padding: 8px;
+}
+
+/* Redondear bordes del contenedor del editor */
+.ql-container {
+  border-radius: 0px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+/* Redondear bordes del área de edición */
+.ql-editor {
+  border-radius: 0px; /* Asegúrate de que coincida con el contenedor */
+}
+
+/* Redondear bordes de la barra de herramientas */
+.ql-toolbar {
+  border-radius: 10px 10px 0 0; /* Solo los bordes superiores */
+}
+
+.custom-back-link {
+  font-size: 2rem !important; /* Ajusta el tamaño del ícono */
+  color: var(--verde-insti-claro) !important; /* Ajusta el color del ícono */
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important; /* Elimina el subrayado del enlace */
+}
+
+.custom-back-link .pi {
+  margin-right: 5px !important; /* Espacio entre el ícono y el texto (si agregas texto más adelante) */
+}
+
+
+.file-list-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.file-name {
+  margin-left: 8px;
+}
+
+.botonEliminarArchivo {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.fontSize{
+  font-size: 13px !important;
+}
+
+.activo {
+  background-color: green;
+  color: white;
+}
+
+.inactivo {
+  background-color: red !important;
+  color: white; 
+}
+
+
+.checkActivar {
+  margin-left: 3.5% !important;
+}
+
+.header-tipo-costo{
+  height: 2rem !important;
+  background: var(--color-aux) !important;
+  width: 100%;
+  height: 25%;
+  color: white;
+}
+
+/* Estilo general para componentes deshabilitados */
+:disabled {
+  background-color: lightgray !important;
+  color: gray !important;
+  cursor: not-allowed;
+}
+
+/* Estilo específico para el botón de PrimeNG */
+.ui-button.ui-state-disabled {
+  background-color: lightgray !important;
+  border-color: lightgray !important;
+  color: gray !important;
+}
+
+/* Estilo específico para el calendario de PrimeNG */
+.ui-inputtext.ui-state-disabled {
+  background-color: lightgray !important;
+  color: gray !important;
+  cursor: not-allowed;
+}
+
+.p-inputnumber-button {
+  width: 2rem !important;
+}
+
+.filaHover {
+  cursor: pointer !important; 
+  transition: background-color 0.3s ease !important; 
+}
+
+.filaHover:hover {
+  background-color: #d6d6d6 !important; 
+}
+// sobre poner advertencia
+.swal2-container {
+  z-index: 9999 !important;  
+}
+
+.ql-editor {
+width: 100%;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.padding-20{
+  padding: 20px !important;
+}
+
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
