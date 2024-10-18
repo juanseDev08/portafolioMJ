@@ -39,12 +39,8 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
+    this.setupMenuItems();
   }
-
-
-
-
 
 
   toggleItem(item: any): void {
@@ -52,128 +48,29 @@ export class AppComponent implements OnInit {
   }
 
   setupMenuItems(): void {
-    const tipoRol = this.nombre;
-    const rol = 'ROL_ADMIN';
 
-    if (this.autenticado && tipoRol === rol) {
       this.items = [
         {
-          label: 'Proyecto',
-          routerLink: 'administracion/proyecto',
+          label: 'Sobre mi',
+          command: () => this.scrollToSection('sobreMi')
         },
         {
-          label: 'Tipos de proyectos',
-          routerLink: 'administracion/tipo-proyecto',
+          label: 'Marcas',
+          command: () => this.scrollToSection('marcas')
         },
         {
-          label: 'Comunidad objetivo',
-          routerLink: 'administracion/comunidad-objetivo',
-        },
-        {
-          label: ' Áreas solicitantes',
-          routerLink: 'administracion/area-solicitante',
-        },
-        {
-          label: 'Costos',
-          routerLink: 'administracion/tipo-costo',
-        },
-        {
-          label: 'Comunidad objetivo',
-          routerLink: 'administracion/comunidad-objetivo',
-        },
-        {
-          label: 'Acto administrativo',
-          routerLink: 'administracion/acto-administrativo',
-        },
-        {
-          label: 'Ingresos Financieros',
-          items: [
-            {
-              label: 'Tipo ingreso',
-              routerLink: 'administracion/tipo-ingreso',
-            },
-            {
-              label: 'Concepto ingreso',
-              routerLink: 'administracion/concepto-ingreso',
-            },
-          ],
-        },
-        {
-          label: 'Gastos operacionales',
-          items: [
-            {
-              label: 'Espacio',
-              routerLink: 'administracion/espacio',
-            },
-            {
-              label: 'Equipo',
-              routerLink: 'administracion/equipo',
-            },
-            {
-              label: 'Rubro',
-              routerLink: 'administracion/rubro',
-            },
-            {
-              label: 'Concepto gasto operacional',
-              routerLink: 'administracion/concepto-gasto-operacional',
-            },
-            {
-              label: 'Tipo costo operacional',
-              routerLink: 'administracion/tipo-costo-operacional',
-            },
-          ],
-        },
-        {
-          label: 'Convenios',
-          items: [
-            {
-              label: 'Entidad Convenio',
-              routerLink: 'administracion/entidad-convenio',
-            },
-          ],
-        },
-        {
-          label: 'Usuario',
-          items: [
-            {
-              label: 'Pantalla',
-              routerLink: 'administracion/pantalla',
-            },
-            {
-              label: 'Privilegio',
-              routerLink: 'administracion/privilegio',
-            },
-            {
-              label: 'Privilegio-Rol',
-              routerLink: 'administracion/privilegio-rol',
-            },
-            {
-              label: 'Rol',
-              routerLink: 'administracion/rol',
-            },
-            {
-              label: 'Usuario',
-              routerLink: 'administracion/usuario',
-            },
-          ],
+          label: 'Contactame',
+          command: () => this.scrollToSection('contactame')
         },
       ];
     
-
-      this.rolAutorizado = true;
-    } else if (this.nombre === 'ROL_USER') {
-      this.router.navigateByUrl('/administracion/proyecto');
-      this.rolAutorizado = false;
-    }
-
-    history.pushState(null, '', location.href);
-    window.addEventListener('popstate', () => {
-      if (!this.autenticado) {
-        history.pushState(null, '', location.href);
-      }
-    });
   }
-
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   toggleSidebar(): void {
     this.sidebarVisible = !this.sidebarVisible;
   }

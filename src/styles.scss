@@ -4,9 +4,9 @@
 @import "@flaticon/flaticon-uicons/css/all/all";
 
 :root {
-  --verde-institucional: #26670f;
-  --verde-insti-oscuro: #1e520c;
-  --verde-insti-claro: #308113;
+  --vinotinto-institucional: #800020;
+  --vinotinto-insti-oscuro: #660016;
+  --vinotinto-insti-claro: #a00030;
   --rojo: #d12727;
   --fondo-tabla: #ededed;
   --tam-input-form: 2.8125rem;
@@ -54,7 +54,7 @@ li {
   /* Alinea el texto en el centro */
   padding: var(--10-px);
   /* Utiliza rem en lugar de píxeles para el relleno */
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   /* Cambia el color del texto */
   width: 100%;
   /* Asegúrate de que ocupe el ancho completo */
@@ -127,7 +127,7 @@ li {
 }
 
 .label-title {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   font-size: var(--20-px);
   font-weight: bold;
 }
@@ -135,7 +135,7 @@ li {
 .label-subline {
   border-bottom: var(--2-px) solid #e0e0e0;
   /* Establece el subrayado y su color */
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   font-size: var(--20-px);
   font-weight: bold;
 }
@@ -248,7 +248,7 @@ li {
   width: var(--40-px);
   height: var(--40-px);
   border-radius: 50%;
-  background-color: var(--verde-institucional);
+  background-color: var(--vinotinto-institucional);
   /* Color de fondo normal */
   color: #fff;
   /* Color del ícono */
@@ -265,14 +265,14 @@ li {
 }
 
 .social-button:hover {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   /* Color del ícono */
   background-color: #fff;
   /* Color de fondo normal */
 }
 
 .mi-enlace {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   /* Cambia el color del texto */
   text-decoration: none;
   /* Elimina la subraya predeterminada */
@@ -306,7 +306,7 @@ li {
   /* Espaciado a la derecha del icono */
   font-size: var(--45-px);
   /* Tamaño de fuente del icono (ajusta según sea necesario) */
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   /* Cambia el color del icono*/
   position: relative;
   /* Añade posicionamiento relativo al icono */
@@ -354,7 +354,7 @@ li {
 
 .p-menubar {
   padding: var(--8-px);
-  background: var(--verde-institucional);
+  background: var(--vinotinto-institucional);
   color: #ffffff;
   border: var(--1-px) solid var(--fondo-tabla);
   border-radius: 0px;
@@ -362,7 +362,7 @@ li {
 
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link,
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   background: var(--fondo-tabla);
 }
 
@@ -372,7 +372,7 @@ li {
 
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-submenu-icon,
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-submenu-icon {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
 }
 
 .p-menubar .p-menuitem.p-menuitem-active>.p-menuitem-link {
@@ -381,17 +381,17 @@ li {
 
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-menuitem-text,
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
 
 }
 
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-submenu-icon,
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-submenu-icon {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
 }
 
 .p-menubar .p-menuitem.p-menuitem-active>.p-menuitem-link .p-menuitem-text {
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
 }
 
 .p-menubar .p-menuitem-link:focus {
@@ -563,7 +563,7 @@ input::placeholder {
 
 .input-cantidad .p-inputnumber .p-button .pi:hover {
   font-size: var(--22-px);
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
   /* Ajusta el tamaño de la fuente según sea necesario */
 }
 
@@ -591,7 +591,7 @@ input::placeholder {
 .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
   background: var(--fondo-tabla);
   border-color: var(--fondo-tabla);
-  color: var(--verde-institucional);
+  color: var(--vinotinto-institucional);
 }
 
 .p-link:focus {
@@ -784,7 +784,7 @@ input {
 }
 
 circle.p-progress-spinner-circle{
-  stroke: var(--verde-institucional);
+  stroke: var(--vinotinto-institucional);
   animation: p-progress-spinner-dash 1.5s ease-in-out infinite;
 }
 
@@ -1105,7 +1105,7 @@ p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch > .p-inputswitch-slider {
 
 .custom-back-link {
   font-size: 2rem !important; /* Ajusta el tamaño del ícono */
-  color: var(--verde-insti-claro) !important; /* Ajusta el color del ícono */
+  color: var(--vinotinto-insti-claro) !important; /* Ajusta el color del ícono */
   display: flex !important;
   align-items: center !important;
   text-decoration: none !important; /* Elimina el subrayado del enlace */
