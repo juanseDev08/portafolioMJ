@@ -25,6 +25,7 @@ import { ToastModule } from 'primeng/toast';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
 import { ComponentesModule } from "../../componentes/componentes.module";
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ComponentesModule } from "../../componentes/componentes.module";
     FormsModule,
     DropdownModule,
     ComponentesModule,
+    CardModule
     
 ]
 })

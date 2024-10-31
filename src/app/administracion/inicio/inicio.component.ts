@@ -15,6 +15,18 @@ export class InicioComponent {
   title = 'gpeuq_frontend';
   sidebarVisible: boolean = false;
 
+  descripcionLinkedIn?: string = "LinkedIn";
+  linkLinkedIn?: string="https://www.linkedin.com/in/juan-sebasti%C3%A1n-san%C3%ADn-villarreal-319584225/";
+  iconLinkedIn?: string = "pi pi-linkedin";
+
+  descripcionGitHub?: string = "GitHub";
+  linkGitHub?: string="https://github.com/juanseDev08";
+  iconGitHub?: string = "pi pi-github";
+
+  descripcionCorreo?: string = "juanses081@gmail.com";
+  linkCorreo?: string = "mailto:juanses081@gmail.com";
+  iconCorreo?: string = "pi pi-envelope";
+
   nomTercero?: string;
   rolAutorizado = false;
 
@@ -52,11 +64,15 @@ export class InicioComponent {
           command: () => this.scrollToSection('sobreMi')
         },
         {
-          label: 'Marcas',
-          command: () => this.scrollToSection('marcas')
+          label: 'Experiencia',
+          command: () => this.scrollToSection('Experiencia')
         },
         {
-          label: 'Contactame',
+          label: 'Proyectos',
+          command: () => this.scrollToSection('Proyectos')
+        },
+        {
+          label: 'Contacto',
           command: () => this.scrollToSection('contactame')
         },
       ];

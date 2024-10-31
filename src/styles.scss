@@ -145,7 +145,7 @@ li {
 }
 
 .p-dropdown-panel {
-  background: #ffffff;
+  background: #F5F5F5;
   color: #495057;
   border: 0 none;
   border-radius: 6px;
@@ -176,13 +176,13 @@ li {
 }
 
 .font {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Onest Variable",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* ---------- Header ---------- */
 .header {
   /* Agrega posicionamiento relativo al contenedor .header */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:  "Onest Variable",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 }
 
@@ -204,18 +204,14 @@ li {
 .footer {
   width: 100%;
   max-width: 100%;
-  height: auto;
-  text-align: center;
-  /* Alinea el contenido en el centro horizontalmente */
-  display: flex;
-  /* Usa flexbox para alinear elementos verticalmente */
-  flex-direction: column;
-  /* Alinea los elementos verticalmente en una columna */
-  align-items: flex-start;
-  /* Alinea los elementos en la parte superior verticalmente */
+  font-family: "Onest Variable",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   position: relative;
-  /* Agrega posicionamiento relativo al contenedor .header */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 /* Estilo para los elementos que estarán en la parte superior */
@@ -304,9 +300,9 @@ li {
 .custom-button i {
   margin-right: var(--5-px);
   /* Espaciado a la derecha del icono */
-  font-size: var(--45-px);
+  font-size: var(--30-px);
   /* Tamaño de fuente del icono (ajusta según sea necesario) */
-  color: var(--vinotinto-institucional);
+  color: white;
   /* Cambia el color del icono*/
   position: relative;
   /* Añade posicionamiento relativo al icono */
@@ -334,8 +330,8 @@ li {
 }
 
 .custom-button-menu i {
-  color: var(--fondo-tabla);
-  /* Cambia el color del icono*/
+  /*color: var(--fondo-tabla);
+   Cambia el color del icono*/
   font-size: var(--35-px);
 }
 
@@ -354,10 +350,8 @@ li {
 
 .p-menubar {
   padding: var(--8-px);
-  background: var(--vinotinto-institucional);
-  color: #ffffff;
-  border: var(--1-px) solid var(--fondo-tabla);
-  border-radius: 0px;
+  background: #F5F5F5;
+  border: 0 !important;
 }
 
 .p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link,
@@ -365,7 +359,13 @@ li {
   color: var(--vinotinto-institucional);
   background: var(--fondo-tabla);
 }
-
+.p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover{
+  background: none !important;
+  color: black !important;
+}
+.p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link{
+  color: black !important;
+}
 .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover {
   background: var(--fondo-tabla);
 }
@@ -414,11 +414,11 @@ li {
 }
 
 .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
-  color: var(--fondo-tabla);
+  color: black;
 }
 
 .p-menubar .p-menubar-root-list > .p-menuitem:not(.p-highlight):not(.p-disabled) > .p-menuitem-content:hover .p-menuitem-link .p-menuitem-text {
-  color: #4b5563;
+  color: black;
 }
 
 
@@ -639,12 +639,13 @@ input {
 
 /* ---------- BUTTON ---------- */
 .p-button {
-  background: var(--color-gpe);
+  background: #000000;
   border: var(--1-px) solid #ffffff;
+  color: #ffffff;
 }
 
 .p-button:enabled:hover {
-  background: var(--color-gpe);
+  background: black;
   border-color: var(--color-gpe);
 }
 
@@ -704,8 +705,8 @@ input {
 
 /*------------- PANTALLA ----------------*/
 .header img {
-  width: 75%;
-  height: auto;
+  width: 10%;
+  height: 10%;
 }
 .custom-dialog {
   width: 70%;
@@ -949,7 +950,7 @@ width: 83% !important;
 
 .content-container {
   transition: margin-left 0.3s;
-  background-color: transparent;
+  background-color: #F5F5F5;
 }
 
 .content-container.shifted {
@@ -1084,7 +1085,7 @@ p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch > .p-inputswitch-slider {
 .ql-toolbar.ql-snow {
   border: 1px solid #ccc;
   box-sizing: border-box;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Onest Variable","Helvetica Neue", "Helvetica", "Arial", sans-serif;
   padding: 8px;
 }
 
@@ -1214,3 +1215,34 @@ width: 100%;
   text-overflow: ellipsis;
 }
 
+.custom-avatar {
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
+  height: 300px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50%; /* Mantiene la forma circular */
+}
+
+/* Clase personalizada para el estilo del botón */
+.custom-button {
+  border-radius: 9999px; /* rounded-full */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* border border-white/10 */
+  display: flex; /* flex */
+  justify-content: center; /* justify-center */
+  align-items: center; /* items-center */
+  gap: 0.5rem; /* gap-x-2 */
+  padding: 0.25rem 0.5rem; /* py-1 px-2 */
+  background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
+  transition: transform 0.2s, background-color 0.2s; /* transition */
+  font-size: 0.75rem; /* text-xs */
+}
+
+@media (min-width: 768px) {
+  .custom-button {
+    padding: 0.5rem 1rem; /* md:py-2 md:px-4 */
+    font-size: 1rem; /* md:text-base */
+  }
+}
+
+.custom-button:hover {
+  transform: scale(1.1); /* hover:scale-110 */
+  background-color: rgba(255, 255, 255, 0.1); /* hover:bg-white/10 */
+}

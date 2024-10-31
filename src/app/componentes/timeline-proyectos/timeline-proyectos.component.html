@@ -1,0 +1,12 @@
+<p-timeline [value]="events">
+    <ng-template pTemplate="content" let-event>
+        <p-card [header]="event.title" [subheader]="event.date">
+            <img *ngIf="event.image" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image"
+                [alt]="event.name" width="200" class="shadow-2" />
+            <p>
+                {{event.description}}
+            </p>
+            <p-button label="Ver más" [text]="true" />
+        </p-card>
+    </ng-template>
+</p-timeline>

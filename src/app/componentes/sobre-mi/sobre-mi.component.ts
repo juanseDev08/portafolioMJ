@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './sobre-mi.component.scss'
 })
 export class SobreMiComponent {
-
+ disponibleTrabajar: string = "Disponible para trabajar";
 }
