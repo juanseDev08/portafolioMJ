@@ -14,7 +14,8 @@ import { TimelineProyectosComponent } from './timeline-proyectos/timeline-proyec
 import { TimelineModule } from 'primeng/timeline';
 import { Button } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
-
+import { DividerModule } from 'primeng/divider';
+import { SplitterModule } from 'primeng/splitter';
 @NgModule({
     imports: [
         CommonModule,
@@ -26,7 +27,9 @@ import { BadgeModule } from 'primeng/badge';
         AvatarModule,
         TimelineModule,
         Button,
-        BadgeModule
+        BadgeModule,
+        DividerModule,
+        SplitterModule
     ],
     declarations: [
         ContactameComponent,

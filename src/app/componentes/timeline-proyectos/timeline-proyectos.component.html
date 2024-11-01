@@ -1,4 +1,6 @@
-<p-timeline [value]="events">
+<H1 class="text-200">Experiencia</H1>
+<p-divider align="center" type="solid" layout="horizontal"></p-divider>
+<p-timeline [value]="events" align="alternate" >
     <ng-template pTemplate="content" let-event>
         <p-card [header]="event.title" [subheader]="event.date">
             <img *ngIf="event.image" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image"

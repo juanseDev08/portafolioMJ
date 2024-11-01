@@ -1,12 +1,12 @@
 <div class="header">
-  <div class="grid bg-light-gray">
+  <div class="grid fondo-portafolio">
    <!-- 
     
    <div class="col-offset-3 col-2 justify-content-end align-items-end">
       <h2>BRANDOM</h2>
     </div>
    --> 
-    <div class="col-offset-4 col-4 flex justify-content-center text-50">
+    <div class="col-offset-3 col-6 flex justify-content-center align-items-center text-50 menu-header">
       <!--
           <div class="card flex justify-content-center  mr-8">
           
@@ -88,7 +88,7 @@
           
           -->
 
-        <p-menubar [model]="items" class="menu-header bg-light-gray"/>
+        <p-menubar [model]="items" class="menu-header  "/>
 
     </div>
     <!-- 
@@ -96,21 +96,22 @@
         <a href="administracion/proyecto"><img src="../assets/images/Logo_UQ_PNG.png"/></a> 
       </div>
     -->
-    <p-card id="sobreMi" class="col-offset-3 col-6 bg-light-gray">
+    <p-card id="sobreMi" class="col-offset-3 col-6 py-8 ">
         <app-sobre-mi></app-sobre-mi>
         <div class=" grid flex-row">
           <app-social-pill [descripcion]=" descripcionLinkedIn!" [icon]="iconLinkedIn!" [link]="linkLinkedIn!"></app-social-pill>
-
-
           <app-social-pill [descripcion]=" descripcionGitHub!" [icon]="iconGitHub!" [link]="linkGitHub!"></app-social-pill>
-
           <app-social-pill [descripcion]=" descripcionCorreo!" [icon]="iconCorreo!" [link]="linkCorreo!"></app-social-pill>
         </div>
     </p-card>
 
-    <p-card id="Experiencia" class="col-offset-3 col-6">
+    <p-card id="Experiencia" class="col-offset-3 col-6 py-8">
       <app-timeline-proyectos></app-timeline-proyectos>
     </p-card>
+
+    <div id="Proyectos" class="col-offset-3 col-6 py-8">
+      <app-proyectos></app-proyectos>
+    </div>
 
     <div id="contactame" class="col-12 footer">
       <app-contactame></app-contactame>
