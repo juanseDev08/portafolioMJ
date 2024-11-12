@@ -1,7 +1,7 @@
 import { Component, OnInit , AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Router } from 'express';
 import { MenuItem, PrimeNGConfig } from 'primeng/api';
 
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',

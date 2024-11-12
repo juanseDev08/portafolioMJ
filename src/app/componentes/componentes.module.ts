@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { HttpClientModule } from '@angular/common/http';
 import { ContactameComponent } from './contactame/contactame.component';
 import { PanelModule } from 'primeng/panel';
@@ -16,6 +15,7 @@ import { Button } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
 import { DividerModule } from 'primeng/divider';
 import { SplitterModule } from 'primeng/splitter';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
     imports: [
         CommonModule,
