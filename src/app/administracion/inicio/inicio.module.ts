@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
-import { InicioComponent } from './inicio.component';
+
 
 import { MenubarModule } from 'primeng/menubar';
 
@@ -25,6 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ComponentesModule } from "../../componentes/componentes.module";
 import { CardModule } from 'primeng/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InicioComponent } from './inicio.component';
+
 
 
 @NgModule({
