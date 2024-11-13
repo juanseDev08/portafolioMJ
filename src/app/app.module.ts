@@ -1,0 +1,58 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MenubarModule } from 'primeng/menubar';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { ToastModule } from 'primeng/toast';
+import { HttpClientModule } from '@angular/common/http';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { SidebarModule } from 'primeng/sidebar';
+import { MenuModule } from 'primeng/menu';
+import { TieredMenuModule } from 'primeng/tieredmenu';
+import { PasswordModule } from 'primeng/password';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputSwitchModule } from 'primeng/inputswitch';
+
+import { DropdownModule } from 'primeng/dropdown';
+import { LOCALE_ID } from '@angular/core';
+import '@angular/common/locales/global/es-CO';
+import { ComponentesModule } from './componentes/componentes.module';
+import { RouterOutlet } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MenubarModule,
+    ToastModule,
+    HttpClientModule,
+    RouterOutlet,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ButtonModule,
+    DialogModule,
+    PanelMenuModule,
+    SidebarModule,
+    MenuModule,
+    TieredMenuModule,
+    PasswordModule,
+    InputTextModule,
+    InputSwitchModule,
+    FormsModule,
+    DropdownModule,
+    ComponentesModule,
+  ],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es-CO' }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
