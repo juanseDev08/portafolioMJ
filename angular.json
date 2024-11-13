@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/proyecto-mj",
+            "outputPath": "dist/proyecto-mj/browser",
             "baseHref": "/portafolioMJ/",
             "index": "src/index.html",
             "browser": "src/main.ts",
