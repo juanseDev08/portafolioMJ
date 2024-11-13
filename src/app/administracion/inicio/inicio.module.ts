@@ -26,6 +26,7 @@ import { ComponentesModule } from "../../componentes/componentes.module";
 import { CardModule } from 'primeng/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     InicioComponent
