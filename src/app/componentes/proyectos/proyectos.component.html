@@ -1,0 +1,20 @@
+<div class="p-grid">
+    <h1 class="text-200">Proyectos</h1>
+    <p-divider align="center" type="solid" layout="horizontal"></p-divider>
+    <div class="p-col-12 p-md-6" *ngFor="let proyecto of proyectos">
+        <div class="flex flex-wrap border-200 box-section mb-8 white-space-normal flex-grow-1 align-items-stretch">
+            <p-card class="flex flex-column flex-grow-1">
+              <ng-template class="p-0" pTemplate="header">
+                <img src="{{ proyecto.imagen }}" alt="{{ proyecto.nombre }}" style="width: 100%;">
+              </ng-template>
+              <div class="p-card-content pt-0 flex-grow-1">
+                <h2>{{ proyecto.nombre }}</h2>
+                <p>{{ proyecto.descripcion }}</p>
+              </div>
+              <ng-template class="pt-0" pTemplate="footer">
+                <p-button label="Ver en GitHub" icon="pi pi-github" class="p-button-outlined" [disabled]="proyecto.disable" (onClick)="navigateToLink(proyecto.link)" target="_blank"></p-button>
+              </ng-template>
+            </p-card>
+        </div>
+    </div>
+</div>

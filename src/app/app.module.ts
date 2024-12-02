@@ -5,10 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToastModule } from 'primeng/toast';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterOutlet } from '@angular/router';
 
-import { ReactiveFormsModule } from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { PanelMenuModule } from 'primeng/panelmenu';
@@ -18,15 +16,17 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { PasswordModule } from 'primeng/password';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import { FormsModule } from '@angular/forms';
- 
+
 import { DropdownModule } from 'primeng/dropdown';
-import { LOCALE_ID } from '@angular/core';  
+import { LOCALE_ID } from '@angular/core';
 import '@angular/common/locales/global/es-CO';
+import { ComponentesModule } from './componentes/componentes.module';
+import { RouterOutlet } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +48,7 @@ import '@angular/common/locales/global/es-CO';
     InputSwitchModule,
     FormsModule,
     DropdownModule,
+    ComponentesModule,
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-CO' }
